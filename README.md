@@ -36,7 +36,7 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 
 ## Run your project using Docker
 
-- Create a copy of the `.env.example` file and use it as a guide to fill it with the respective information
+- Create a copy of the `.env.example` file and use it as a guide to fill it with the respective information:
 
 ```cp .env.example .env```
 
@@ -45,7 +45,7 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 
 - Uncomment too the `DATABASES` dict below `#### FOR RUN WITH DOCKER ####` section
 
-- Execute the docker compose command to build project and run your project
+- Execute the docker compose command to build project and run your project:
 
 ```sudo docker-compose up -d --build```
 
@@ -59,14 +59,18 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 
 ```python manage.py makemigrations```
 
+
 ```python manage.py migrate```
+
 
 ```python manage.py runserver 0.0.0.0:8000```
 
 - Push your local changes to your git repository:
 
  ```git add .```
+
  ```git commit -m "First Commit"```
+
  ```git push origin master```
 
 - Install Heroku CLI: `sudo snap install --classic heroku`
