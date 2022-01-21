@@ -20,6 +20,8 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 
 ## Run your project locally
 
+**You must have already installed an configured your potgresql database**
+
 - Uncomment the `DEBUG = False` constant in settings
 
 - Uncomment too the `DATABASES` dict below `### FOR RUN LOCALLY ####` section and set  the values with the respective data in settings
