@@ -15,15 +15,27 @@ You can use it locally, or with docker, or deploy it directly to your project on
 
 ### There are 3 methods to use your new project
 
+**NOTE:**
+You can use `openssl rand -base64 32` command in you terminal to generate a django secret key
+
 ## Run your project locally
+
+- Uncomment the `DEBUG = False` constant
+
+- Uncomment too the `DATABASES` dict below `### FOR RUN LOCALLY ####` section and set  the values with the respective data
+
+- Execute following commands:
+
+```python manage.py makemigrations```
+```python manage.py migrate```
+```python manage.py runserver 0.0.0.0:8000```
+
 ## Run your project using Docker
 
 - In your main folder, create a copy of the `.env.example` file and use it as a guide to fill it with the respective information
 
 ```cp .env.example .env```
 
-**NOTE:**
-You can use `openssl rand -base64 32` command in you terminal to generate a django secret key
 
 - Open your `settings.py` and uncomment the `# DEBUG = os.getenv('DEBUG')` line
 
