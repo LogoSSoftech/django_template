@@ -29,7 +29,9 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 - Execute following commands:
 
 ```python manage.py makemigrations```
+
 ```python manage.py migrate```
+
 ```python manage.py runserver 0.0.0.0:8000```
 
 ## Run your project using Docker
@@ -56,7 +58,9 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 - Execute following commands to build migrations locally:
 
 ```python manage.py makemigrations```
+
 ```python manage.py migrate```
+
 ```python manage.py runserver 0.0.0.0:8000```
 
 - Push your local changes to your git repository:
