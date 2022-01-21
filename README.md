@@ -34,6 +34,12 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 
 ```python manage.py runserver 0.0.0.0:8000```
 
+
+Open your favorite browser and go to:
+
+
+```http://0.0.0.0:8000```
+
 ## Run your project using Docker
 
 - Create a copy of the `.env.example` file and use it as a guide to fill it with the respective information:
@@ -48,6 +54,12 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 - Execute the docker compose command to build project and run your project:
 
 ```sudo docker-compose up -d --build```
+
+Open your favorite browser and go to:
+
+
+```http://0.0.0.0:8000```
+
 
 ## Load your project to Heroku
 
@@ -78,7 +90,7 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 
 - If you haven't a Heroku App, create one **Don't use underscores**:
 
-- `heroku create yourappname`
+`heroku create yourappname`
 
 - Sync your git repo with your heroku app:
 
@@ -90,10 +102,22 @@ You can use `openssl rand -base64 32` command in you terminal to generate a djan
 
 - Push your project to your Heroku App: `git push heroku master `
 
-- Execute the migrations in your remote app_
+- Execute the migrations in your remote app:
 
 ```heroku run python manage.py migrate```
 
 - Open your remote project:
 
 `heroku open`
+
+By @DDBCDVD
+
+If you find bugs, or do you want me to addsome other host to deploy the project:
+
+## Contact Me
+
+* [logos.softech@gmail.com](mailto:logos.softech@gmail.com?)
+* [LinkedIn](https://linkedin.com/in/DDBCDVD)
+* [Twitter](https://twitter.com/DDBCDVD)
+* [Telegram DDBCDVD](https://t.me/DDBCDVD)
+* [Telegram LogoSSoftech](https://t.me/LogoSSoftech)
