@@ -17,7 +17,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DEBUG = os.getenv('DEBUG')
+# DEBUG = os.getenv('DEBUG')
+
+# DEBUG = False
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -119,7 +121,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-### FOR LOCAL ####
+### FOR RUN LOCALLY ####
 
 # DATABASES = {
 #     'default': {
@@ -132,7 +134,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #     }
 # }
 
-#### FOR HEROKU ####
+#### FOR DEPLOY ON HEROKU ####
 
 # import dj_database_url
 # from decouple import config
@@ -142,7 +144,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #     )
 # }
 
-#### FOR DOCKER ####
+#### FOR RUN WITH DOCKER ####
 
 # DATABASES = {
 #     'default': {
