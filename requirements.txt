@@ -1,4 +1,4 @@
-Django==4.0.1
+Django==4.0.9
 djoser==2.1.0
 Pillow==9.0.0
 asgiref==3.4.1
