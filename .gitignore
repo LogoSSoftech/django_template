@@ -51,6 +51,8 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+core/migrations
+
 # Translations
 *.mo
 *.pot
@@ -131,3 +133,4 @@ dmypy.json
 #Project Folders
 /media/img/users/*
 /data
+/core/migrations

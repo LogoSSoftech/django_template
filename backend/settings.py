@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# DEBUG = os.getenv('DEBUG')
+DEBUG = os.getenv('DEBUG')
 
 # DEBUG = False
 
@@ -137,13 +137,13 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 #### FOR DEPLOY ON HEROKU ####
 
-# import dj_database_url
-# from decouple import config
-# DATABASES = {
-#     'default': dj_database_url.config(
-#             default=config('DATABASE_URL')
-#     )
-# }
+import dj_database_url
+from decouple import config
+DATABASES = {
+    'default': dj_database_url.config(
+            default=config('DATABASE_URL')
+    )
+}
 
 #### FOR RUN WITH DOCKER ####
 
